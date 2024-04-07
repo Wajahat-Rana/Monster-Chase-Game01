@@ -75,6 +75,20 @@ public class PlayerMovement : MonoBehaviour
         if(collision.gameObject.CompareTag("Ground")){
             isGrounded = true;
         }
+        if(collision.gameObject.CompareTag("Monster")){
+            Destroy(gameObject);
+        }
+    }
+    /// <summary>
+    /// Sent when another object enters a trigger collider attached to this
+    /// object (2D physics only).
+    /// </summary>
+    /// <param name="other">The other Collider2D involved in this collision.</param>
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if(other.gameObject.CompareTag("Monster")){
+            Destroy(gameObject);
+        }
     }
     
 }

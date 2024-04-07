@@ -14,9 +14,9 @@ GameObject:
   - component: {fileID: 2455741738221681705}
   - component: {fileID: 3237343768894732464}
   - component: {fileID: 8985857354755706184}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RedMonster
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
