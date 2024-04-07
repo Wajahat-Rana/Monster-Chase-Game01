@@ -12,7 +12,7 @@ public class PlayerMovement : MonoBehaviour
     private string Walk_Status = "Walk";
     private float jumpForce = 10f;
     private bool isGrounded;
-
+    private bool jumpInput;
 
     void Awake(){
         spRender = GetComponent<SpriteRenderer>();
@@ -32,11 +32,17 @@ public class PlayerMovement : MonoBehaviour
         movementX = Input.GetAxisRaw("Horizontal");
         playerMovement();
         playerAnimation();
-        
+        if(Input.GetButtonDown("Jump")){
+            jumpInput = true;
+        }
     }
     void FixedUpdate()
     {
+        if(jumpInput){
         playerJump();
+        jumpInput = false;
+        }
+        
     }
 
     void playerMovement(){
@@ -59,7 +65,7 @@ public class PlayerMovement : MonoBehaviour
     }
 
     void playerJump(){
-        if(Input.GetButtonDown("Jump")&& isGrounded){
+        if(isGrounded){
             isGrounded = false;
             myBody.AddForce(new Vector2(0f,jumpForce),ForceMode2D.Impulse);
         }

@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8144523152785459619}
   - component: {fileID: 3356573370893128701}
   - component: {fileID: 2455741738221681705}
+  - component: {fileID: 3237343768894732464}
   m_Layer: 0
   m_Name: RedMonster
   m_TagString: Untagged
@@ -180,3 +181,16 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &3237343768894732464
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1531918713678295000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a7634c294d625449887a3d71bf06ca6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0
