@@ -480,7 +480,7 @@ GameObject:
   - component: {fileID: 1219283221}
   - component: {fileID: 1219283220}
   m_Layer: 5
-  m_Name: Select Player2
+  m_Name: 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -612,7 +612,7 @@ GameObject:
   - component: {fileID: 1362317395}
   - component: {fileID: 1362317394}
   m_Layer: 5
-  m_Name: Select Player1
+  m_Name: 0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
